@@ -1,0 +1,72 @@
+@base: #e6e4db;
+@menu: lighten(@base, 5%);
+@els-blue:  #007ab1;
+@els-green: #92aa3a;
+@els-red:   #bd2f76;
+@els-gray:  #b3b2b2;
+
+
+body {
+	background: @base;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+.login {
+	background: lighten(@base, 5%);
+	border-color: saturate(@base, 5%);
+	border-radius: 1em;
+}
+
+.required-tick {
+    color: red;
+    position: absolute;
+    right: 10px;
+    height: 10px;
+    line-height: 10px;
+    top: 50%;
+    margin-top: -5px;
+    z-index: 999;
+}
+.input, .select {
+    position: relative;
+    display: block;
+    clear:both;
+    float: left;
+}
+
+.els-header {
+	margin: 1em 1em 2em 1em;
+}
+.els-title {
+	margin-top: 2px;
+	color: @els-blue;
+	font-family: Arial, 'Droid Sans', sans-serif;
+	font-size: 2.5em;
+	font-weight: bold;
+}
+.els-logout {
+	float: right;
+	cursor: pointer;
+}
+.els-menu {
+	background: @menu;
+	padding-bottom: 1em;
+}
+
+.els-menu-item {
+	cursor: pointer;
+	padding-left: 0.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	color: @els-blue;
+	
+}
+.els-menu-item-selected {
+	background-color: @els-blue;
+	color: white;
+	font-weight: bold;
+}
+.els-menu-item:mouseover {
+	background-color: darken(@base, 5%);
+}
+
